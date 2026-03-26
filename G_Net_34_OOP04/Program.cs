@@ -108,40 +108,40 @@ namespace G_Net_34_OOP04
         #endregion
 
         #region Ticket Base Class
-        public class Ticket
-        {
-            private static int _ticketCounter = 0;
-            public string MovieName { get; set; }
-            private decimal _price;
-            public int TicketId { get; }
+        //public class Ticket
+        //{
+        //    private static int _ticketCounter = 0;
+        //    public string MovieName { get; set; }
+        //    private decimal _price;
+        //    public int TicketId { get; }
 
-            public decimal Price
-            {
-                get => _price;
-                protected set => _price = value > 0 ? value : throw new ArgumentException("Price must be > 0");
-            }
+        //    public decimal Price
+        //    {
+        //        get => _price;
+        //        protected set => _price = value > 0 ? value : throw new ArgumentException("Price must be > 0");
+        //    }
 
-            public decimal PriceAfterTax => Price * 1.14m;
+        //    public decimal PriceAfterTax => Price * 1.14m;
 
-            public Ticket(string movieName, decimal price)
-            {
-                TicketId = ++_ticketCounter;
-                MovieName = movieName;
-                Price = price;
-            }
+        //    public Ticket(string movieName, decimal price)
+        //    {
+        //        TicketId = ++_ticketCounter;
+        //        MovieName = movieName;
+        //        Price = price;
+        //    }
 
-            public virtual void PrintTicket()
-            {
-                Console.WriteLine($"Ticket #{TicketId} | Movie: {MovieName} | Price: {Price} EGP | After Tax: {PriceAfterTax:F2} EGP");
-            }
+        //    public virtual void PrintTicket()
+        //    {
+        //        Console.WriteLine($"Ticket #{TicketId} | Movie: {MovieName} | Price: {Price} EGP | After Tax: {PriceAfterTax:F2} EGP");
+        //    }
 
-            public void SetPrice(decimal newPrice) => Price = newPrice;
-            public void SetPrice(decimal basePrice, decimal multiplier) => Price = basePrice * multiplier;
+        //    public void SetPrice(decimal newPrice) => Price = newPrice;
+        //    public void SetPrice(decimal basePrice, decimal multiplier) => Price = basePrice * multiplier;
 
-            public static int GetTotalTickets() => _ticketCounter;
+        //    public static int GetTotalTickets() => _ticketCounter;
 
-            public override string ToString() => $"Ticket #{TicketId} | {MovieName} | Price: {Price} EGP";
-        }
+        //    public override string ToString() => $"Ticket #{TicketId} | {MovieName} | Price: {Price} EGP";
+        //}
         #endregion
 
         #region Three Child Classes
