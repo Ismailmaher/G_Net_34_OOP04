@@ -145,45 +145,45 @@ namespace G_Net_34_OOP04
         #endregion
 
         #region Three Child Classes
-        public class StandardTicket : Ticket
-        {
-            public string SeatNumber { get; set; }
-            public StandardTicket(string movie, decimal price, string seat) : base(movie, price) => SeatNumber = seat;
+        //public class StandardTicket : Ticket
+        //{
+        //    public string SeatNumber { get; set; }
+        //    public StandardTicket(string movie, decimal price, string seat) : base(movie, price) => SeatNumber = seat;
 
-            public override void PrintTicket()
-            {
-                base.PrintTicket();
-                Console.WriteLine($"   Seat: {SeatNumber}");
-            }
-        }
+        //    public override void PrintTicket()
+        //    {
+        //        base.PrintTicket();
+        //        Console.WriteLine($"   Seat: {SeatNumber}");
+        //    }
+        //}
 
-        public class VIPTicket : Ticket
-        {
-            public bool LoungeAccess { get; set; }
-            public decimal ServiceFee { get; } = 50;
-            public VIPTicket(string movie, decimal price, bool lounge) : base(movie, price) => LoungeAccess = lounge;
-            public override void PrintTicket()
-            {
-                base.PrintTicket();
-                Console.WriteLine($"   Lounge: {(LoungeAccess ? "Yes" : "No")} | Service Fee: {ServiceFee} EGP");
-            }
-        }
+        //public class VIPTicket : Ticket
+        //{
+        //    public bool LoungeAccess { get; set; }
+        //    public decimal ServiceFee { get; } = 50;
+        //    public VIPTicket(string movie, decimal price, bool lounge) : base(movie, price) => LoungeAccess = lounge;
+        //    public override void PrintTicket()
+        //    {
+        //        base.PrintTicket();
+        //        Console.WriteLine($"   Lounge: {(LoungeAccess ? "Yes" : "No")} | Service Fee: {ServiceFee} EGP");
+        //    }
+        //}
 
-        public class IMAXTicket : Ticket
-        {
-            public bool Is3D { get; set; }
-            public IMAXTicket(string movie, decimal price, bool is3D) : base(movie, price)
-            {
-                Is3D = is3D;
-                if (Is3D) Price += 30;
-            }
+        //public class IMAXTicket : Ticket
+        //{
+        //    public bool Is3D { get; set; }
+        //    public IMAXTicket(string movie, decimal price, bool is3D) : base(movie, price)
+        //    {
+        //        Is3D = is3D;
+        //        if (Is3D) Price += 30;
+        //    }
 
-            public override void PrintTicket()
-            {
-                base.PrintTicket();
-                Console.WriteLine($"   IMAX 3D: {(Is3D ? "Yes" : "No")}");
-            }
-        }
+        //    public override void PrintTicket()
+        //    {
+        //        base.PrintTicket();
+        //        Console.WriteLine($"   IMAX 3D: {(Is3D ? "Yes" : "No")}");
+        //    }
+        //}
         #endregion
     }
 
