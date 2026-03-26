@@ -71,40 +71,40 @@ namespace G_Net_34_OOP04
         }
 
         #region Cinema Classes
-        public class Projector
-        {
-            public void Start() => Console.WriteLine("Projector started.");
-            public void Stop() => Console.WriteLine("Projector stopped.");
-        }
+        //public class Projector
+        //{
+        //    public void Start() => Console.WriteLine("Projector started.");
+        //    public void Stop() => Console.WriteLine("Projector stopped.");
+        //}
 
-        public class Cinema
-        {
-            private Ticket[] _tickets = new Ticket[20];
-            private int _count = 0;
+        //public class Cinema
+        //{
+        //    private Ticket[] _tickets = new Ticket[20];
+        //    private int _count = 0;
 
-            public void OpenCinema()
-            {
-                Console.WriteLine("========== Cinema Opened ==========");
-                Console.WriteLine("Projector started.");
-            }
+        //    public void OpenCinema()
+        //    {
+        //        Console.WriteLine("========== Cinema Opened ==========");
+        //        Console.WriteLine("Projector started.");
+        //    }
 
-            public void AddTicket(Ticket t) { if (_count < 20) _tickets[_count++] = t; }
+        //    public void AddTicket(Ticket t) { if (_count < 20) _tickets[_count++] = t; }
 
-            public void PrintAllTickets()
-            {
-                Console.WriteLine("\n========== All Tickets ==========");
-                for (int i = 0; i < _count; i++)
-                {
-                    _tickets[i].PrintTicket();
-                }
-            }
+        //    public void PrintAllTickets()
+        //    {
+        //        Console.WriteLine("\n========== All Tickets ==========");
+        //        for (int i = 0; i < _count; i++)
+        //        {
+        //            _tickets[i].PrintTicket();
+        //        }
+        //    }
 
-            public void CloseCinema()
-            {
-                Console.WriteLine("\n========== Cinema Closed ==========");
-                Console.WriteLine("Projector stopped.");
-            }
-        }
+        //    public void CloseCinema()
+        //    {
+        //        Console.WriteLine("\n========== Cinema Closed ==========");
+        //        Console.WriteLine("Projector stopped.");
+        //    }
+        //}
         #endregion
 
         #region Ticket Base Class
