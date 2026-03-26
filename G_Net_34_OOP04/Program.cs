@@ -41,31 +41,31 @@ namespace G_Net_34_OOP04
             
                 #region Practical 
                 
-                Cinema myCinema = new Cinema();
-                myCinema.OpenCinema();
+                //Cinema myCinema = new Cinema();
+                //myCinema.OpenCinema();
 
-                StandardTicket t1 = new StandardTicket("Inception", 120, "A-5");
-                VIPTicket t2 = new VIPTicket("Avengers", 200, true);
-                IMAXTicket t3 = new IMAXTicket("Dune", 180, false);
+                //StandardTicket t1 = new StandardTicket("Inception", 120, "A-5");
+                //VIPTicket t2 = new VIPTicket("Avengers", 200, true);
+                //IMAXTicket t3 = new IMAXTicket("Dune", 180, false);
 
-                Console.WriteLine("\n========== SetPrice Test ==========");
-                t1.SetPrice(150);
-                Console.WriteLine("Setting price directly: 150");
-                t1.SetPrice(100, 1.5m);
-                Console.WriteLine("Setting price with multiplier: 100 x 1.5 = 150");
+                //Console.WriteLine("\n========== SetPrice Test ==========");
+                //t1.SetPrice(150);
+                //Console.WriteLine("Setting price directly: 150");
+                //t1.SetPrice(100, 1.5m);
+                //Console.WriteLine("Setting price with multiplier: 100 x 1.5 = 150");
 
                
-                myCinema.AddTicket(t1);
-                myCinema.AddTicket(t2);
-                myCinema.AddTicket(t3);
-                myCinema.PrintAllTickets();
+                //myCinema.AddTicket(t1);
+                //myCinema.AddTicket(t2);
+                //myCinema.AddTicket(t3);
+                //myCinema.PrintAllTickets();
 
                 
-                ProcessTicket(t2);
+                //ProcessTicket(t2);
 
-                myCinema.CloseCinema();
-                Console.WriteLine("\nPress any key to exit...");
-                Console.ReadKey();
+                //myCinema.CloseCinema();
+                //Console.WriteLine("\nPress any key to exit...");
+                //Console.ReadKey();
                 #endregion
             }
         }
